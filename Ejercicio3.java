@@ -3,7 +3,6 @@ package fp.daw.exprog20210902;
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
-import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -12,7 +11,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Scanner;
 import java.util.TreeMap;
 
 public class Ejercicio3 {
@@ -48,6 +46,7 @@ public class Ejercicio3 {
 				mapa.put(dat[0], m);
 
 			}
+			in.close();
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
